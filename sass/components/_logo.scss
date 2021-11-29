@@ -1,0 +1,18 @@
+.header__logo {
+    color: $secondary-text-color;
+  }
+  .footer__logo {
+    color: $primary-color;
+  }
+  .web-logo {
+    color: $accent-color;
+  }
+  .header__logo,
+  .web-logo,
+  .footer__logo {
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
