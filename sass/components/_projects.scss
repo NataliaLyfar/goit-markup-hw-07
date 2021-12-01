@@ -1,15 +1,4 @@
-.portfolio {
-    padding: 94px 0;
-  }
-  .filter {
-    display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
-  }
-  .filter__items:not(:last-child) {
-    margin-right: 8px;
-  }
-  
+
   .projects {
     display: flex;
     flex-wrap: wrap;
@@ -24,7 +13,6 @@
         margin-bottom: 0;
       }
   }
-  
   .projects__link {
     transition: box-shadow $transition-duration $transition-timing-function;
     display: block;
@@ -57,7 +45,7 @@
     opacity: 1;
   }
   }
-  
+
   .projects__description {
     padding: 63px 24px;
     font-size: 18px;

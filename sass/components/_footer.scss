@@ -9,43 +9,13 @@
     display: flex;
     align-items: baseline;
   }
-  .map-link {
-    display: inline-block;
-    margin-top: 20px;
-  
-    color: $primary-color;
-    &:hover,
-    &:focus,
-    &:active {
-      color: $accent-color;
-    }
-  }
-  .footer__contact-link {
-    display: inline-block;
-    margin-top: 9px;
-  
-    color: $shadow-text-color;
-    &:hover,
-  &:focus,
-  &:active {
-    color: $accent-color;
-  }
-  }
-  .map-link,
-  .footer__contact-link {
-    transition: color $transition-duration $transition-timing-function;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-  }
   
   .join-us {
     width: 206px;
     height: 80px;
     margin-left: 70px;
   }
-  .action-text {
+  .footer-title {
     margin-bottom: 20px;
     font-family: Roboto;
     font-size: 14px;
@@ -56,60 +26,5 @@
     text-transform: uppercase;
     color: $primary-color;
   }
-  .join-us__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+
   
-  .join-us__link {
-    transition: background-color $transition-duration $transition-timing-function,
-      color $transition-duration $transition-timing-function;
-    display: flex;
-    width: 44px;
-    height: 44px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: $shadow2-color;
-    color: $primary-color;
-    &:hover,
-    &:focus {
-      background-color: $accent-color;
-      color: $primary-color;
-    }
-}
-  
-  .subscribe {
-    margin-left: auto;
-  }
-  .subscribe__form {
-    display: flex;
-  }
-  .subscribe__input {
-    transition: border $transition-duration $transition-timing-function,
-      outline $transition-duration $transition-timing-function;
-    margin-right: 12px;
-  
-    width: 358px;
-    height: 50px;
-    padding: 15px 16px;
-    border-radius: 4px;
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $shadow-text-color;
-    &:hover,
-  &:focus {
-    border: 1px solid $accent-color;
-    outline: 0;
-  }
-  }
-  
-  .subscribe__icon {
-    fill: currentColor;
-    margin-left: 10px;
-  }

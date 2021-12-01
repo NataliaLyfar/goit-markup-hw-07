@@ -1,6 +1,4 @@
-.feature {
-    padding: 94px 0;
-  }
+
   .feature__list {
     display: flex;
   }
@@ -11,7 +9,7 @@
       }
   }
   
-  .thumb {
+  .feature-icon__wrapper {
     background-color: $primary-shade-color;
     display: flex;
     min-width: 270px;
