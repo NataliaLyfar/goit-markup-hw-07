@@ -1,126 +1,26 @@
-%header__link { 
-  transition: color $transition-duration $transition-timing-function;
-padding: 32px 0;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  &:hover, &:focus, &:active {
-    color: $accent-color;
-  }
-}
-
-.nav__link {
-  @extend %header__link;
-  color: $tertiary-text-color;
-}
-.nav__link--current {
-  position: relative;
-  color: $accent-color;
-  &::after {
-    position: absolute;
-     bottom: 0;
-     left: 0;
-   width: 100%;
-     height: 4px;
-   
-     display: block;
-     content: "";
-     background-image: url(../images/current-line.png);
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     border-radius: 2px;
-   }
-}
-.header-contact__link {
-  @extend %header__link;
-  color: inherit;
-  display: flex;
-  align-items: center;
-}
-
-.contact__icon {
-  fill: currentColor;
-  margin-right: 10px;
-}
 .clients__link {
-    transition: color $transition-duration $transition-timing-function,
-      border $transition-duration $transition-timing-function;
-    display: flex;
-    min-width: 170px;
-    min-height: 92px;
-  
-    border: 1px solid $icon-color;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-  
-    background-color: $primary-color;
-    color: $icon-color;
-    &:hover,
+  @include transition (color);
+  @include transition (border);
+  @include decotation (none);
+  @include bodered ($icon-color);
+  @extend %flex-center-style;
+  min-width: 170px;
+  min-height: 92px;
+  border-radius: 4px;
+  @include colored ($primary-color, $icon-color);
+  &:hover,
   &:focus {
-    border: 1px solid $accent-color;
+    @include bodered ($accent-color);
     color: $accent-color;
   }
-  }
-  .clients__icon {
-    fill: currentColor;
-  }
-  .social-link {
-    transition: background-color $transition-duration $transition-timing-function,
-      color $transition-duration $transition-timing-function;
-    display: flex;
-    width: 44px;
-    height: 44px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    &:hover,
-  &:focus {
-    background-color: $accent-color;
-    color: $primary-color;
-  }
-  }
-  .social-link__icon {
-    fill: currentColor;
-  }
-  @mixin colored ($background-color, $color) {
-    background-color: $background-color;
-    color: $color;
-  }
-  .social-link--grey {
-    @include colored ($primary-color, $icon-color);
-  }
-  .social-link--white {
-    @include colored ($shadow2-color, $primary-color);
 }
-
-  %footer__link {
-    transition: color $transition-duration $transition-timing-function;
-    display: inline-block;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    &:hover,
-    &:focus,
-    &:active {
-      color: $accent-color;}
-  }
-  .map-link {
-    @extend %footer__link;
-    margin-top: 20px;
-    color: $primary-color;
-  }
-  .footer__contact-link {
-    @extend %footer__link;
-    margin-top: 9px;
-    color: $shadow-text-color;
-  }
-  .condition-link {
-    color: $accent-color;
-    text-decoration-skip-ink: none;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-  }
+.clients__icon {
+  fill: currentColor;
+}
+.condition-link {
+  color: $accent-color;
+  text-decoration-skip-ink: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}

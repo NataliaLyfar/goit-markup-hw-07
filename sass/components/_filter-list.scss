@@ -1,8 +1,7 @@
 .filter {
-    display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
-  }
-  .filter__items:not(:last-child) {
-    margin-right: 8px;
-  }
+  @extend %flex-center-style;
+  margin-bottom: 50px;
+}
+.filter__items:not(:last-child) {
+  margin-right: 8px;
+}

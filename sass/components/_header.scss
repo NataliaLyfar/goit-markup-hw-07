@@ -1,22 +1,11 @@
 .header {
-    border-bottom: 1px solid $border-color;
-  }
-  .header__nav {
-    display: flex;
-    align-items: center;
-  }
+border-bottom: 1px solid $border-color;
+}
+.header__nav {
+display: flex;
+align-items: center;
+}
   
-  .header-contact {
-    display: flex;
-    margin-left: auto;
-  }
-
-  .header-contact__item {
-    display: flex;
-    &:first-child {
-      margin-right: 50px;
-    }
-  }
   
   
   

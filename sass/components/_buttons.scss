@@ -1,20 +1,18 @@
 .primary-button {
-    transition: background-color $transition-duration $transition-timing-function,
-      color $transition-duration $transition-timing-function;
+  @include transition (background-color);
+  @include transition (color);
+    @include colored ($accent-color, $primary-color);
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
     min-width: 200px;
     height: 50px;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     padding: 0;
     border: 0;
     border-radius: 4px;
-  
-    background-color: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    color: $primary-color;
     cursor: pointer;
-  
     font-family: inherit;
     font-size: 16px;
     font-weight: 700;
@@ -24,25 +22,24 @@
     &:hover,
   &:focus,
   &:active {
-    background-color: $accent-color;
-    color: $primary-color;
+    @include colored ($accent-color, $primary-color);
   }
   }
   
+  .primary-button__icon {
+    fill: currentColor;
+    margin-left: 10px;
+  }
   .close-btn {
-    transition: color $transition-duration $transition-timing-function,
-      border $transition-duration $transition-timing-function;
-   
-    display: inline-flex;
+    @include transition (color);
+    @include transition (border);
+    @include bodered (rgba(0, 0, 0, 0.1));
+    @extend %flex-center-style;
     width: 30px;
     height: 30px;
     padding: 0;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: transparent;
-  
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
     &:hover,
   &:focus {
@@ -54,18 +51,15 @@
     fill: currentColor;
   }
   .secondary-button {
-    transition: background-color $transition-duration $transition-timing-function,
-      color $transition-duration $transition-timing-function,
-      box-shadow $transition-duration $transition-timing-function;
+  @include transition (background-color);
+  @include transition (color);
+  @include transition (box-shadow);
+  @include colored ($primary-shade-color, $tertiary-text-color);
     display: inline-block;
     padding: 6px 22px;
     border-radius: 4px;
     border: 0;
-  
-    background-color: $primary-shade-color;
-    color: $tertiary-text-color;
     cursor: pointer;
-  
     font-family: inherit;
     font-size: 16px;
     font-weight: 500;
@@ -75,9 +69,8 @@
     &:focus,
   &:hover,
   &:active {
-    background-color: $accent-color;
-    color: $primary-color;
+    @include colored ($accent-color, $primary-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   }
   }

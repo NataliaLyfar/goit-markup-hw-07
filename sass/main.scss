@@ -1,11 +1,15 @@
 @import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/placeholders";
 @import "./components/commonstyle";
 @import "./components/logo";
 @import "./components/links";
 @import "./components/header";
 @import "./components/navigation";
+@import "./components/contacts";
 @import "./components/hero";
 @import "./components/buttons";
+@import "./components/section";
 @import "./components/feature";
 @import "./components/review";
 @import "./components/team";

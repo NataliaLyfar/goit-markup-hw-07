@@ -1,14 +1,13 @@
 
-  
-  .clients__list {
-    display: flex;
+.clients__list {
+display: flex;
+}
+.clients__item {
+flex-basis: calc(100% / 6);
+  &:not(:last-child) {
+    margin-right: 30px;
   }
-  .clients__item {
-    flex-basis: calc(100% / 6);
-    &:not(:last-child) {
-        margin-right: 30px;
-      }
-  }
+}
   
   
   
