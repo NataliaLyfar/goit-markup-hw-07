@@ -1,7 +1,10 @@
 .nav {
-  display: flex;
-  margin-left: 95px;
-  align-items: center;
+  @media screen and (min-width:$tablet) {
+    display: flex;
+    margin-left: 95px;
+    align-items: center;
+  }
+ 
 }
 .nav__item:not(:last-child) {
   margin-right: 50px;

@@ -1,6 +1,13 @@
 
 .feature__list {
-  display: flex;
+  @media screen and (min-width:$tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width:$desktop) {
+    display: flex;
+  }
+  
 }
 .feature__item {
   flex-basis: calc (100% / 4);

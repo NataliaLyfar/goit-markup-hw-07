@@ -2,8 +2,10 @@
 border-bottom: 1px solid $border-color;
 }
 .header__nav {
+    @media screen and (min-width:$tablet) {
 display: flex;
 align-items: center;
+}
 }
   
   

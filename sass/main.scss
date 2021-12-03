@@ -1,6 +1,9 @@
 @import "./utils/variables";
+@import "./utils/breakpoints";
 @import "./utils/mixins";
 @import "./utils/placeholders";
+
+@import "./components/container";
 @import "./components/commonstyle";
 @import "./components/logo";
 @import "./components/links";
